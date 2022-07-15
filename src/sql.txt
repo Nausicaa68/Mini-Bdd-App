@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS Personnel
+CREATE DATABASE IF NOT EXISTS Personnel
+USE Personnel
+CREATE TABLE Employee(PersonID int not null, name varchar(255), position varchar(255), payRate float, PRIMARY KEY(PersonID))
+INSERT INTO Employee VALUES (1, "VERY Maelys", "Co-CEO", 1000.5)
+INSERT INTO Employee VALUES (2, "DUMAS Guillaume", "Co-CEO", 1000.5)
+INSERT INTO Employee VALUES (3, "Other1", "lying down", 25.5)
+INSERT INTO Employee VALUES (4, "Other2", "sit", 20)
+INSERT INTO Employee VALUES (5, "Other3", "sit", 20.5)
